@@ -68,7 +68,7 @@ The purpose of this workshop, and the follow up Data Organization with Excel02, 
 
 In rectanglur data formats, samples or other observational units are arranged in rows and the variables that are collected for these samples are arranged in columns.  
   
-![](images/RectData.PNG)
+![](images/RectData.png)
   
 There are many data sets that are not amenable to rectangular format, but it is unlikely that you would try to analyze such data with Excel.  Almost any table can be considered a rectangular data set, but some tables can be a data visualization because they are meant to be read by a person and not a computer, e.g. a menu is a type of table.  
   
@@ -80,19 +80,19 @@ In **wide** data sets, similar variables are organized into separate columns, bu
   
 There is nothing inherently wrong with wide format, and Excel often requires this format for analysis or visualization.  In fact, wide format applies to data matrices which are very common in computational data analysis.  However, wide format is often not amenable to statistical analysis with software other than Excel.  
   
-![](images/Wide.PNG)
+![](images/Wide.png)
   
 ## Long Data  
   
 In **long** format, similar variables are gathered into a single column that can be aggregated or grouped on additional variables.  The wide format for the bacterial growth assays can be easily (relatively speaking) converted to long format by gathering the values in the `cfu` columns into a single column named `cfu` and introducting a new column named `day` with values derived from the original column names.  
   
-![](images/Long.PNG)
+![](images/Long.png)
   
 ## Tidy Data  
   
 Finally, **tidy** data sets are motivated by the imperative to make your data as transparent as possible.  Each variable should be as simple and unambiguous as possible.  In the example, there is only one ambiguous variable, and that is `day`.  Relatively speaking, the variable is easy to interpret, but there is valuable information missing, i.e. *what exact day of the past several centuries are we talking about?*  For some data sets, this might not be critical, but for an experiment in plant pathology, the environmental can have huge effects on the results.  Thus, it is critical to know the exact date.  
   
-![](images/Tidy.PNG)
+![](images/Tidy.png)
   
 There is still one problem with this data set in that the `day` format is month-day-year.  It is generally recommended that may you use year-month-day.  However, Excel does not allow year-month-day format in English (Unitd States), a ridiculous decision on the part of Microsoft!  
   
