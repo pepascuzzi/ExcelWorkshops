@@ -3,8 +3,9 @@ title: "Data Organization with Excel 1 on ITaP Computers"
 author: "Pete E. Pascuzzi"
 date: "September 5, 2019"
 output: 
-    html_document:
-        toc: true
+    html_document: 
+      keep_md: yes
+      toc: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -12,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 # Setup
   
-You cannot save your work on the Data Viz Lab computers.  **When you log out, any files on the lab computer will be deleted!**  However, your ITaP home directory is mounted as the `W: drive` when you log in.  To save your work, drag your files from the Data Viz Lab computer, to your home directory.  
+For Purdue University students, **you cannot save fies to the lab computer!**  However, your ITaP home directory should be mapped as the `W:` drive.  Remember to drag your work to your home directory before you log out!
   
 ![](images/Capture00_0.png)  
   
